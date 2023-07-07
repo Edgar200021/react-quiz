@@ -1,6 +1,10 @@
-function Options({ question, dispatch, answer }) {
+import { useQuiz } from '../Contexts/QuizContext'
+
+function Options({ question }) {
+  const { dispatch, answer } = useQuiz()
+
   function handleAnswer(answer) {
-    dispatch({ type: 'newAnswer', payload: answer})
+    dispatch({ type: 'newAnswer', payload: answer })
   }
 
   const hasAnswered = answer !== null
