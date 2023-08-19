@@ -149,12 +149,12 @@ const initialState = {
       points: 20,
     },
   ],
-  status: 'loading',
+  status: 'active',
   index: 0,
   answer: null,
   points: 0,
   highscore: 0,
-  secondsRemaining: null,
+  secondsRemaining: 600,
 }
 
 const SECS_PER_QUESTION = 30
