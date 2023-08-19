@@ -84,7 +84,9 @@ function QuizProvider({ children }) {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await fetch('http://localhost:4000/questions')
+        const res = await fetch('http://localhost:4000/questions', {
+			mode: 'no-cors'
+		})
 
         if (!res.ok) {
           dispatch({ type: 'start' })
