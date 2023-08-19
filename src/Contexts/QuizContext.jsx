@@ -149,7 +149,7 @@ const initialState = {
       points: 20,
     },
   ],
-  status: 'active',
+  status: 'ready',
   index: 0,
   answer: null,
   points: 0,
